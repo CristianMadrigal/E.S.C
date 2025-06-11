@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAP</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    thead {
+      background-color: #0078d4;
+      color: #fff;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .progress-bar {
+      width: 100%;
+      background-color: #e0e0e0;
+      height: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .progress {
+      height: 10px;
+      background-color: #28a745;
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .navbar-brand img {
+      height: 100px;
+      margin-right: 10px;
+    }
+
+    .navbar-nav {
+      margin: auto;
+    }
+
+    .navbar {
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 10px 20px;
+    }
+
+    .navbar-nav a:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="header"></div>
+
+
+  <!-- Tabla de Proyectos -->
+  <div class="container">
+    <h1>Tabla de Proyectos</h1>
+    <br>
+    <br>
+    <table id="projectsTable">
+      <thead>
+        <tr>
+          <th>Proyecto</th>
+          <th>2025</th>
+          <th>2026</th>
+          <th>2027</th>
+          <th>Fase</th>
+          <th>Estado</th>
+          <th>Progreso</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a>Fortalecimiento de la Actividad Deportiva y Promoción de Hábitos Saludables mediante la Dotación del Gimnasio Municipal en la Unidad Deportiva Principal del municipio de   Copacabana, Antioquia	</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Presentado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Elaboración ESTUDIOS Y DISEÑOS PARA PARQUES, ANDENES Y OTROS ESPACIOS PÚBLICOS DEL MUNICIPIO DE   Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Presentado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>	Elaboración de estudios y diseños para las obras de estabilización de la quebrada Rodas en la zona urbana, barrio Machado en el Municipio de   Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Presentado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Desarrollo de un ecosistema educativo 4.0 que apunte al fortalecimiento y encadenamiento de los diferentes niveles educativos en el municipio de   Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Construcción del centro cultural multidisciplinario para la formación, circulación y presentaciones artísticas en la zona norte del departamento de    Copacabana, Antioquia</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>En Actualziación MGA</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Fortalecimiento de los niveles de gobernanza de la salud en el municipio de  Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Viabilidad</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Implantación de estrategias para garantizar el desarrollo de acciones que generen estilos de vida saludables en el municipio de  Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>En Actualización</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>	Adquisición de equipos biomédicos necesarios para los servicios atención en salud de la  ESE Hospital Santa Margarita del municipio de   Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Banco Proyectos</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>		Mantenimiento y Mejoramiento de la Vía Peñolcito y Montañita   Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Presentado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Elaboración Estudios, Diseños, Adquisición Ampliación E Implementación Circuito Cerrado De Televisión – Sistema Integrado De Emergencias Y Seguridad (SIES)  Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Presentado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Elaboración de los estudios y diseños para la construcción de la Estación de Policía y la Sede de Bomberos en el municipio de   Copacabana, Antioquia</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>En Actualización MGA</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>	Aprovechamiento Aumentar la eficiencia en la recolección de residuos sólidos en el municipio de Copacabana.  Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Presentado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Fortalecimiento de la capacidad institucional y operativa para la atención de emergencias a través del Cuerpo de Bomberos voluntarios mediante la dotación de equipos, herramientas y un vehículo transportador de agua (cisterna) en el municipio de  Copacabana, Antioquia</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>En Actualización MGA</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>	Elaboración de los estudios y diseños para la construcción del centro del adulto mayor en el municipio de  Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Presentado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>		Adquisición de equipos tecnológicos (TI), que permita el mejoramiento de la prestación de servicios de salud en la ESE Hospital Santa Margarita del municipio de  Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Presentado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>			Fortalecimiento del sector literario mediante la realización de la Feria del Libro "Copacabana entre letras, libros y cultura"  Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Presentado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Fortalecimiento del sector literario mediante la realización de la Feria del Libro "Copacabana entre letras, libros y cultura"  Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Presentado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>	Implementación  y actualización del Plan Básico de Ordenamiento Territorial (PBOT) en el municipio de   Copacabana, Antioquia</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Mejoramiento de Parques Infantiles y Gimnasios al aire Libre  Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>En actualización MGA</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Fortalecimiento de la infraestructura y dotación en salud innovadora y con calidad en el municipio de   Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Presentado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Fortalecimiento de las capacidades diversas en el cuidado y defensa de los Derechos humanos enfocados en la población LGBTIQA+ delMunicipio de Copacabana Copacabana  Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Fortalecimiento de la capacidad de gestión en el sector cultural a través de la gobernanza cultural eficiente la formación y promoción artística, vocacional, para la protección y salvaguardia del patrimonio cultura en el municipio de   Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+<tr>
+          <td><a>Fortalecimiento del acceso y permanencia en el sistema educativo desde un enfoque territorial en el municipio de   Copacabana, Antioquia</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+<tr>
+          <td><a>Fortalecimiento Integral, pedagógico y educativo en el municipio de   Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+<tr>
+          <td><a>Fortalecimiento del Programa de Alimentación Escolar-PAE en las Instituciones y sedes educativas oficiales del municipio de  Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Fortalecimiento de la hacienda pública y la gestión de recursos en el municipio de Copacabana, Antioquia</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Capital Semilla “Copa evoluciona”        </a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Fortalecimiento y Modernización de la Infraestructura de la Agencia Pública de Empleo y Espacios Educativos del SENA en Copacabana: Mejora de Servicios para el Desarrollo Laboral, Educación y formación del Municipio       </a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Fortalecimiento y Modernización de la Infraestructura de la Agencia Pública de Empleo y Espacios Educativos del SENA en Copacabana: Mejora de Servicios para el Desarrollo Laboral, Educación y formación del Municipio       </a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Elaboración de una marca ciudad para el municipio de Copacabana que genere visibilidad y reconocimiento en el mercado local/regional, fortaleciendo la identidad y sentido de pertenencia en los habitantes y comerciantes del municipio de Copacabana</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Festival del chorizo- FONTUR           </a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Atención Integral a la Infancia y Adolescencia en el Municipio de Copacabana: Prevención, Reparación y Atención a Casos de Vulneraciones          </a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Dotación de la Casa de la Juventud como estrategia para el fortalecimiento de la participación juvenil en el municipio de Copacabana.          </a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Dotar de herramientas e implementos, al Centro de Atención Integral a la Discapacidad, que permita promover acciones en las áreas de salud, educación, deporte, recreación, arte, cultura y empleo para la población con discapacidad y sus familias.          </a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Dotación para el centro de traslado por protección del municipio de Copacabana          </a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Construcción de un documento de adopción de la Política Pública Nacional, que permita la inclusión, el fomento del respeto interreligioso y el apoyo al desarrollo espiritual y social de las entidades religiosas. Copacabana          </a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Refugio de Esperanza para las Víctimas que llegan al municipio de Copacabana desplazadas como estrategia para el fortalecimiento de las víctimas.          </a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Remodelación de restaurantes escolares.</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+        <tr>
+          <td><a>Dotación de equipos y menaje de restaurantes escolares.</a></td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>33%</td>
+          <td>Registro Actualizado</td>
+          <td>Radicado</td>
+          <td><div class="progress-bar"><div class="progress" style="width: 10%;"></div></div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+            let repoName = "/TimeLineProyectos"; // Nombre del repositorio en GitHub Pages
+            let path = window.location.pathname;
+    
+            // Ajusta el path para eliminar el nombre del repo y obtener la ruta real del archivo
+            let relativePath = path.startsWith(repoName) ? path.replace(repoName, "") : path;
+    
+            // Páginas que están en la raíz del proyecto
+            let rootPages = ["/", "/index.html", "/embudo.html", "/formulacion.html", "/formulados.html", "/mapa.html", "/pilares.html", "/planDesarrollo.html", "/ProyectosPensados.html", "/radicados.html", "/timeLine.html"];
+            let isRoot = rootPages.includes(relativePath);
+    
+            // Calcula la profundidad del archivo dentro de la estructura de carpetas
+            let depth = isRoot ? 0 : relativePath.split("/").length - 2;
+            let prefix = depth > 0 ? "../".repeat(depth) : "";
+    
+            // Ruta corregida del header
+            let headerPath = "https://camilomadrigal12.github.io/TimeLineProyectos/header.html";
+    
+            console.log("Ruta generada para el header:", headerPath); // Verifica en la consola
+    
+            fetch(headerPath)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("No se pudo cargar el header. Verifica la ruta.");
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById("header").innerHTML = data;
+    
+                    setTimeout(() => {
+                        let logo = document.querySelector("#header #logo");
+                        if (logo) {
+                            logo.src = prefix + logo.getAttribute("data-src");
+                            console.log("Logo cargado con src:", logo.src);
+                        }
+                        let links = document.querySelectorAll("#header a[data-href]");
+                        links.forEach(link => {
+                            let newHref = isRoot ? link.getAttribute("data-href") : prefix + link.getAttribute("data-href");
+                            link.setAttribute("href", newHref);
+                            console.log(`Modificado link: ${link.innerText} -> ${newHref}`);
+                        });
+                    });
+                })
+                .catch(error => console.error("Error cargando el header:", error));
+        });
+  </script>
+</body>
+</html>
